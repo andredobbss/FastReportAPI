@@ -1,0 +1,6 @@
+@FastReportAPI_HostAddress = https://localhost:7242
+
+GET {{FastReportAPI_HostAddress}}/api/Products/GetProductsReport
+Accept: application/pdf
+
+###

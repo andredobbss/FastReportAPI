@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RestoreSources>https://api.nuget.org/v3/index.json</RestoreSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\reports\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FastReport.Data.MsSql" Version="2025.2.0" />
+    <PackageReference Include="FastReport.OpenSource" Version="2025.2.0" />
+    <PackageReference Include="FastReport.OpenSource.Export.PdfSimple" Version="2025.2.0" />
+    <PackageReference Include="FastReport.OpenSource.Web" Version="2025.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.4" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+
+ 
+</Project>

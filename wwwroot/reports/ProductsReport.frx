@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="04/17/2025 11:52:41" ReportInfo.Modified="04/17/2025 15:42:37" ReportInfo.CreatorVersion="2024.2.0.0">
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqM7gJFg/iaLrqMhRfGy5lGge2Mf/gIEeuaSkcucqVGlc70s7KsZfSnGLsw6f5Xrz6KqLFGnlG1HBZkV0m+ETTOC2VOiQiFTcPGH5GP5jgBDOQ1lwf76y5Pngzdz+wGzRCgPFygd0LzITMUrg50SAPD7vgeRXdfJ2/GCmovH5uOFa20QQ1rkFEKxDTrqWYVTANMlWCmFwn2c46GTgD0QB/NQ==">
+      <TableDataSource Name="Table" Alias="Products" DataType="System.Int32" Enabled="true" SelectCommand="SELECT &#13;&#10;	P.[ProductID],&#13;&#10;	P.[ProductName],&#13;&#10;	C.[CategoryName],&#13;&#10;	P.[QuantityPerUnit],&#13;&#10;	P.[UnitPrice]&#13;&#10;FROM &#13;&#10;	[dbo].[Products] P&#13;&#10;INNER JOIN &#13;&#10;	[dbo].[Categories] C&#13;&#10;ON&#13;&#10;	P.CategoryID = C.CategoryID">
+        <Column Name="ProductID" DataType="System.Int32"/>
+        <Column Name="ProductName" DataType="System.String"/>
+        <Column Name="CategoryName" DataType="System.String"/>
+        <Column Name="QuantityPerUnit" DataType="System.String"/>
+        <Column Name="UnitPrice" DataType="System.Decimal"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" Guides="9.45,708.75,198.45,56.7,292.95,453.6,623.7,0,720.09,54.81,287.28,629.37,614.25" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="103.95" Fill.Color="CadetBlue" Guides="9.45,47.25,56.7,75.6">
+      <TextObject Name="Text6" Left="9.45" Top="9.45" Width="699.3" Height="37.8" Fill.Color="CadetBlue" Text="PRODUCT LIST" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt, style=Bold" TextFill.Color="White"/>
+      <TextObject Name="Text8" Left="9.45" Top="56.7" Width="189" Height="18.9" Text="[Date]" Format="Custom" Format.Format="dd/MM/yyyy HH:mm:ss" VertAlign="Center" Font="Arial, 9pt" TextFill.Color="White"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="107.95" Width="718.2" Height="18.9" Fill.Color="LightGray" Guides="0,18.9">
+      <TextObject Name="Text1" Left="9.45" Width="47.25" Height="18.9" Text="Id" HorzAlign="Center" Font="Arial, 11pt, style=Bold"/>
+      <TextObject Name="Text2" Left="56.7" Width="236.25" Height="18.9" Text="Product Name" HorzAlign="Center" Font="Arial, 11pt, style=Bold"/>
+      <TextObject Name="Text3" Left="292.95" Width="160.65" Height="18.9" Text="Category Name" HorzAlign="Center" Font="Arial, 11pt, style=Bold"/>
+      <TextObject Name="Text4" Left="453.6" Width="170.1" Height="18.9" Text="Quantity Per Unit" HorzAlign="Center" Font="Arial, 11pt, style=Bold"/>
+      <TextObject Name="Text5" Left="623.7" Width="85.05" Height="18.9" Text="Unit Price" HorzAlign="Center" Font="Arial, 11pt, style=Bold"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="130.85" Width="718.2" Height="18.9" Guides="0,18.89999" DataSource="Table">
+      <TableObject Name="Table1" Width="720.09" Height="18.9">
+        <TableColumn Name="Column1" Width="54.81"/>
+        <TableColumn Name="Column2" Width="232.47"/>
+        <TableColumn Name="Column3" Width="166.32"/>
+        <TableColumn Name="Column4" Width="175.77"/>
+        <TableColumn Name="Column5" Width="90.72"/>
+        <TableRow Name="Row1">
+          <TableCell Name="Cell1" Border.Lines="All" Text="[Products.ProductID]" Font="Arial, 10pt"/>
+          <TableCell Name="Cell2" Border.Lines="All" Text="[Products.ProductName]" Font="Arial, 10pt"/>
+          <TableCell Name="Cell3" Border.Lines="All" Text="[Products.CategoryName]" Font="Arial, 10pt"/>
+          <TableCell Name="Cell4" Border.Lines="All" Text="[Products.QuantityPerUnit]" Font="Arial, 10pt"/>
+          <TableCell Name="Cell5" Border.Lines="All" Text="[Products.UnitPrice]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" Font="Arial, 10pt"/>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="153.75" Width="718.2" Height="28.35" Guides="9.449997,28.34999">
+      <TextObject Name="Text7" Left="614.25" Top="9.45" Width="94.5" Height="18.9" Text="[PageN]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>
