@@ -18,7 +18,8 @@ A API implementa dois modos distintos de acesso a dados:
 
 ## 📂 Estrutura do Projeto
 
-![image](https://github.com/user-attachments/assets/63b0c0e7-7ec1-4545-9ac6-754410fdb625)
+![image](https://github.com/user-attachments/assets/367fb931-e5c3-48fa-87ca-dc3c0639390b)
+
 
 ## ✅ Funcionalidades
 
