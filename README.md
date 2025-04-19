@@ -1,5 +1,7 @@
 # FastReportAPI
 
+![GitHub repo views](https://komarev.com/ghpvc/?username=andredobbss&repo=FastReportAPI&color=blue)
+
 Projeto desenvolvido com o objetivo de gerar relatórios em formato PDF a partir de dados armazenados no **SQL Server**, utilizando o **FastReport.Net** integrado a uma API em **.NET 9**.
 
 A API implementa dois modos distintos de acesso a dados:
