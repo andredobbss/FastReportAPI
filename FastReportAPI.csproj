@@ -17,6 +17,7 @@
     <PackageReference Include="FastReport.OpenSource.Export.PdfSimple" Version="2025.2.0" />
     <PackageReference Include="FastReport.OpenSource.Web" Version="2025.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.2" />
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
 
